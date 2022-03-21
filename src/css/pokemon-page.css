@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+body {
+    text-align: center;
+    padding: 30px;
+    background: #f8f4f2;
+    font-family: Arial;
+}
+.loader {
+    display: block;
+    margin: auto;
+}
+.grid-fluid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-align: center;
+}
+
+figure {
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0px;
+    transform: skew(0deg, 13deg);
+    margin: 30px 0px 0px 0px;
+    background: #c8c2c2;
+    height: 250px;
+    width: 200px;
+}
+figure img {
+    transform: skew(0deg, -13deg);
+}
+figure p {
+    font-weight: bold;
+}
+
+figcaption  {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+    background: #fff;
+    line-height: 19px;
+    color: #04bcff;
+    margin: 20px 0px 10px 0px;
+    font-size: 18px;
+    font-weight: bolder;
+}
